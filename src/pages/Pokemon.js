@@ -29,7 +29,7 @@ const Pokemon = () => {
   };
 
   const handleNext = () => {
-    if (Math.floor(count / (offset + 1)) > 1) {
+    if (count > offset) {
       setOffset(offset + 12);
     }
   };
